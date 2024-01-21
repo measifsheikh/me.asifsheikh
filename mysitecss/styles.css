@@ -2,16 +2,17 @@
 
 /*******border box*******/
 .border{
-    margin: 1%;
-width: 96vw;
-height: 95vh;
 
-background: linear-gradient(26deg, #000000, #141e13, #2bbdc7, #fffffea5, #28271f, #000000);
-background-size: 1200% 1200%;
--webkit-animation: AnimationName 37s ease infinite;
--moz-animation: AnimationName 37s ease infinite;
--o-animation: AnimationName 37s ease infinite;
-animation: AnimationName 37s ease infinite;
+  width: 98vw;
+  height: 96vh;
+  margin: .6rem ;
+
+  background: linear-gradient(26deg, #000000, #141e13, #2bbdc7, #fffffea5, #28271f, #000000);
+  background-size: 1200% 1200%;
+  -webkit-animation: AnimationName 37s ease infinite;
+  -moz-animation: AnimationName 37s ease infinite;
+  -o-animation: AnimationName 37s ease infinite;
+  animation: AnimationName 37s ease infinite;
 
 border-style:solid;
 border-radius: 1px;
@@ -26,6 +27,11 @@ body{
     margin: 0;
     display: inline;
 
+
+}
+
+* {
+    box-sizing: border-box;
 }
 
 /**************name****************/
@@ -34,6 +40,7 @@ body{
     width: 40px;
     height: 7.5rem;
     max-height: 7%;
+    max-width: 100%;
     font-size: 1.4rem;
     text-transform: uppercase;
     overflow: hidden;
@@ -44,14 +51,16 @@ body{
 }
 .hidden-text:hover{
 
-    width: 96vw;
+    width: 97vw;
 
 }
 .box1{
 
+
     height: 7.5rem;
     max-height: 7%;
     margin: 1%;
+    max-width: 98vw;
     margin-bottom: 0;
     margin-right: -2%;
     margin-top: 2rem;
@@ -98,24 +107,25 @@ body{
     width:calc(20% - 5vw);
     max-width: 70px;
     height: 300px;
-    margin: 1px;
+ 
     
     background-color: #a5942500;
     position: absolute;
-    right: 3vw;
+    right: 4vw;
     bottom: 3vw;
     overflow:hidden;
    }
 
 .text11{
-    text-align: right;
-    font-size: 40%;
+    text-align: left;
+    line-height: 1.1rem;
+    font-size: 0.8rem;
     text-size-adjust: none;
     line-break:calc(1px);
     color: bisque;
 
-}
 
+}
 
 
 
