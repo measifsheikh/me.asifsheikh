@@ -62,7 +62,7 @@ body{
     color: rgb(216, 206, 226);
     transition: width 0.4s;
 }
-.hidden-text:hover{
+.hidden-text:hover , .hidden-text:focus{
 
     width: 97vw;
 
@@ -73,7 +73,7 @@ body{
     height: 7.5rem;
     max-height: 7%;
     margin: 1%;
-    max-width: 95%;
+    max-width: 96%;
     margin-bottom: 0;
     margin-right: -2%;
     margin-top: 2rem;
