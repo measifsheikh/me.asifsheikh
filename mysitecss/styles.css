@@ -6,7 +6,7 @@
   width: 98vw;
   height: 96vh;
   max-width: 98%;
-  max-height: 93%;
+  max-height: 98%;
   margin: .6rem ;
   margin: auto;
   margin-top: .6rem;
@@ -14,13 +14,12 @@
   top: 0; left: 0; bottom: 0; right: 0;
   
 
-  background: linear-gradient(26deg, #000000, #141e13, #2bbdc7, #fffffea5, #28271f, #000000);
-  background-size: 1200% 1200%;
+  background: repeating-linear-gradient(255deg, #28476f, #2bd5fe, #b15103, rgb(0, 0, 0) , #d73e3b, #1f0cac, #3F72AF , #000000 , #ffffff , #000000);
+  background-size: 500% 500%;
   -webkit-animation: AnimationName 37s ease infinite;
   -moz-animation: AnimationName 37s ease infinite;
   -o-animation: AnimationName 37s ease infinite;
-  animation: AnimationName 37s ease infinite;
-
+  animation: anima 20s  infinite;
 border-style:solid;
 border-radius: 1px;
 border-width: 0.02rem;
@@ -30,7 +29,7 @@ overflow: hidden;
 }
 
 body{
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     margin: 0;
     display: inline;
     max-zoom: 2 ;
@@ -47,12 +46,21 @@ body{
     height: 2rem;
 }
 
+@media (max-width: 500px)  {
+   
+    .border{
+         max-height: 95%;
+    }
+
+
+}
+
 /**************name****************/
 .hidden-text{
 
-    width: 40px;
-    height: 7.5rem;
-    max-height: 7%;
+    width: 30px;
+    height:  auto;
+    max-height: 2rem;
     max-width: 100%;
     font-size: 1.4rem;
     text-transform: uppercase;
@@ -61,19 +69,24 @@ body{
     position: absolute;
     color: rgb(216, 206, 226);
     transition: width 0.4s;
+    font-weight: lighter;
+    font-family: 'Zen Maru Gothic', serif;
+
+    
 }
 .hidden-text:hover , .hidden-text:focus{
 
     width: 97vw;
 
 }
+
 .box1{
 
 
-    height: 7.5rem;
-    max-height: 7%;
+    height: auto;
+    max-height: 2rem;
     margin: 1%;
-    max-width: 96%;
+    max-width: 95%;
     margin-bottom: 0;
     margin-right: -2%;
     margin-top: 2rem;
@@ -91,12 +104,13 @@ body{
 
 .text12{ margin: 3rem;
     text-align: left;
-    font-size: 2.3rem;
+    font-size: 1.7rem;
     text-size-adjust: none;
     line-break:calc(1px);
-    color: bisque;
+    color: rgb(255, 255, 255);
     overflow: hidden;
-
+    font-weight: lighter;
+    font-family: 'Zen Maru Gothic', serif;
     pointer-events: none;
 }
 
@@ -105,10 +119,10 @@ body{
 .logo{
     filter: invert(100%);
    width: 100%;
-   max-width: 40px;
+   max-width: 30px;
    height: 100%;
    max-height: 40px;
-   transition: width 0.5s;
+
   
 }
 
@@ -120,7 +134,7 @@ body{
     width: 5.5rem;
     max-width: 30%;
     height: 50%;
- 
+
     
     background-color: #a5942500;
     position: absolute;
@@ -130,13 +144,14 @@ body{
    }
 
 .text11{
-    text-align: left;
+    text-align: center;
     line-height: 1.1rem;
     font-size: 0.8rem;
     text-size-adjust: none;
     line-break:calc(1px);
     color: bisque;
-
+    font-weight: lighter;
+    font-family: 'Zen Maru Gothic', serif;
 
 }
 
@@ -148,14 +163,16 @@ body{
     height: 25%;
     margin: 1%;
     background-color: rgba(197, 24, 168, 0);
-    margin-top: 0;
+    margin-top: 4%;
 
 }
 .pages-link{
     text-decoration: none;  
     font-size: 1rem; 
     margin: 0;
-    color: #065a06cb;
+    color: #ffffff;
+    font-weight: lighter;
+    font-family: 'Zen Maru Gothic', serif;
 
 }
 .link-pages{
@@ -187,27 +204,32 @@ body{
     
     background-color: #00000000;
 position: absolute;
-right: 6vw;
-bottom: 4vw;
-bottom: 6rem;
+right: 2vw;
+bottom: 1vw;
+bottom: 3rem;
 margin-left: 4rem;
 font-size:calc(0.9rem - 60%);
-
+overflow-x: scroll;
+overflow-y: visible;
 
 }
+.box6::-webkit-scrollbar {
+    display: none;}
+
 
 .text14{ 
     margin-left:1.5rem;
     text-align: right;
-    font-size:calc(1.9rem - 60%);
+    font-size:calc(1.3rem - 60%);
     text-decoration: none;
     transition: 1s ease transform;
     
     margin-bottom: 3rem;
-    font-family: 'Pacifico', cursive;
-    font-style: italic;
-    font: optional;
-    color: #6f6a6a;
+    font-weight: lighter;
+    font-family: 'Zen Maru Gothic', serif;
+
+
+    color: #000000;
 }
 .text14:hover{
 
@@ -225,17 +247,19 @@ font-size:calc(0.9rem - 60%);
 
  .img2{
     width: 100%;
-   max-width: 40px;
+   max-width: 25px;
    height: 100%;
-   max-height: 40px;
+   max-height: 25px;
    transform: rotate(@-o-keyframes);
+
+   filter: invert(1);
   
 
 
   
  }
 
- .rot:hover{
+ .rot:hover , .rot:focus{
    transition: ease-in-out transform 10s;
    transform: rotate(3600deg);
  }
@@ -268,18 +292,20 @@ font-size:calc(0.9rem - 60%);
     text-decoration: none;
     transition: 1s ease transform;
     margin-top: 1rem;
+    
 }
 .text13:hover{
 
     transform:  scale(1.2);
-    text-shadow: #595a5b;
+    text-shadow: #0572df;
+    
  }
  
  .seprate1{
     position: relative;
     top: 3rem;
     line-height: 1rem;
-    text-decoration-color: #141e13;
+    text-decoration-color: #44c938;
  }
 
 a { color: inherit; text-decoration: none;} 
@@ -306,6 +332,17 @@ a { color: inherit; text-decoration: none;}
     100%{background-position:0% 76%}
 }
 
+@keyframes anima {
+    0%{background-position:5% 25%}
+    15%{background-position:25% 50%}
+    30%{background-position:50% 75%}
+    45%{background-position:75% 100%}
+    60%{background-position:100% 75%}
+    75%{background-position:75% 50%}
+    90%{background-position:50% 0%}
+    105%{background-position:25% 5%}
+
+}
 
 
 
