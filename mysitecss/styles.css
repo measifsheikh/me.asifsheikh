@@ -307,9 +307,9 @@ body {
 
 .box5 {
     width: 15 rem;
-    max-width: 50%;
-    height: 35rem;
-    max-height: 35vh;
+    max-width: 100%;
+    height: 40rem;
+    max-height: 40vh;
 
     background-color: #c5b33f00;
     position: absolute;
@@ -340,7 +340,7 @@ body {
 
 .text13:hover {
 
-    transform: scale(1.2);
+    transform: scale(0.99);
     text-shadow: #0572df;
 
 }
@@ -350,6 +350,7 @@ body {
     top: 3rem;
     line-height: 1rem;
     text-decoration-color: #44c938;
+    overflow-x: visible;
 }
 
 a {
