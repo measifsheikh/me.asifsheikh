@@ -316,6 +316,7 @@ body {
     left: 2vw;
     bottom: 3vw;
     overflow-y: scroll;
+    overflow-x: visible;
     position: absolute;
     bottom: 1rem;
     margin-left: 0rem;
