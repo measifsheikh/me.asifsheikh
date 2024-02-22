@@ -55,6 +55,32 @@ body {
 
 }
 
+
+@media (max-width: 600px) and (orientation: landscape){
+
+   
+    .text13 {
+        font-size: calc(0.2rem - 60%); 
+    }
+
+    
+    .box1 , .box2 , .box3 , .box4 , .box5 , .box6 ,.text12 {
+
+        font-size: 0.7rem;
+    }
+    
+    .pages-link {
+    
+        text-decoration: none;
+        font-size: 0.4rem;
+        margin: 0;
+        color: #ffffff;
+        font-weight: lighter;
+        font-family: 'Zen Maru Gothic', serif;
+    
+    }
+}
+
 /**************name****************/
 .hidden-text {
 
@@ -163,15 +189,17 @@ body {
 
 /**********nav/bar**************/
 .box2 {
+    display: inline;
     width: calc(25% + 2rem);
-    height: 25%;
+    height: 30vh;
     margin: 1%;
     background-color: rgba(197, 24, 168, 0);
-    margin-top: 4%;
+    margin-top: 2%;
 
 }
 
 .pages-link {
+    
     text-decoration: none;
     font-size: 1rem;
     margin: 0;
@@ -182,17 +210,17 @@ body {
 }
 
 .link-pages {
+ 
 
     list-style: none;
     margin: 0%;
-    height: 1.7rem;
     transition: 1s ease transform;
 }
 
 .link-pages:hover {
 
-    transform: scale(1.2);
-    text-shadow: #0960c9;
+    transform: scale(0.99);
+
 }
 
 
@@ -262,7 +290,7 @@ body {
     max-height: 25px;
     transform: rotate(@-o-keyframes);
 
-    filter: invert(1);
+    filter: invert();
 
 
 
@@ -281,19 +309,22 @@ body {
     width: 15 rem;
     max-width: 50%;
     height: 35rem;
-    max-height: 55%;
+    max-height: 50vh;
 
     background-color: #c5b33f00;
     position: absolute;
     left: 2vw;
     bottom: 3vw;
-
+    overflow-y: scroll;
     position: absolute;
     bottom: 1rem;
     margin-left: 0rem;
     font-size: calc(0.9rem - 60%);
 
 
+}
+.box5::-webkit-scrollbar {
+    display: none;
 }
 
 .text13 {
