@@ -1,38 +1,29 @@
-
-
 /*******border box*******/
-.border{
-
-  width: 98vw;
-  height: 96vh;
-  max-width: 98%;
-  max-height: 98%;
-  margin: .6rem ;
-  margin: auto;
-  margin-top: .6rem;
-  position: absolute;
-  top: 0; left: 0; bottom: 0; right: 0;
-  
-
-  background: repeating-linear-gradient(255deg, #28476f, #2bd5fe, #b15103, rgb(0, 0, 0) , #d73e3b, #1f0cac, #3F72AF , #000000 , #ffffff , #000000);
-  background-size: 500% 500%;
-  -webkit-animation: AnimationName 37s ease infinite;
-  -moz-animation: AnimationName 37s ease infinite;
-  -o-animation: AnimationName 37s ease infinite;
-  animation: anima 20s  infinite;
-border-style:solid;
-border-radius: 1px;
-border-width: 0.02rem;
-border-color: aliceblue;
-overflow: hidden;
-overflow: hidden;
+.border {
+    width: 98%;
+    height: 96%;
+    margin: auto;
+    margin-top: 0.6rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: repeating-linear-gradient(255deg, #28476f,#2bd5fe,#b15103,#000,#d73e3b,#1f0cac,#3f72af, #000, #fff, #000);
+    background-size: 500% 500%;
+    animation: anima 20s infinite;
+    border: 0.02rem solid aliceblue;
+    border-radius: 1px;
+    overflow: hidden;
 }
 
-body{
+
+body {
     background-color: rgb(0, 0, 0);
     margin: 0;
     display: inline;
-    max-zoom: 2 ;
+    zoom: 1;
+    text-wrap: nowrap;
 
 }
 
@@ -41,25 +32,34 @@ body{
 }
 
 
-.page-icon{
+.page-icon {
     width: 2rem;
     height: 2rem;
 }
 
-@media (max-width: 500px)  {
-   
-    .border{
-         max-height: 95%;
-    }
+@media (max-width: 600px) {
 
+    .border {
+        max-height: 95%;
+    }
+    
+    .text13 {
+        margin-left: 1.5rem;
+        text-align: left;
+        font-size: calc(0.6rem - 60%);
+        text-decoration: none;
+        transition: 1s ease transform;
+        margin-top: 1rem;
+    
+    }
 
 }
 
 /**************name****************/
-.hidden-text{
+.hidden-text {
 
     width: 30px;
-    height:  auto;
+    height: auto;
     max-height: 2rem;
     max-width: 100%;
     font-size: 1.4rem;
@@ -72,15 +72,17 @@ body{
     font-weight: lighter;
     font-family: 'Zen Maru Gothic', serif;
 
-    
+
 }
-.hidden-text:hover , .hidden-text:focus{
+
+.hidden-text:hover,
+.hidden-text:focus {
 
     width: 97vw;
 
 }
 
-.box1{
+.box1 {
 
 
     height: auto;
@@ -90,8 +92,8 @@ body{
     margin-bottom: 0;
     margin-right: -2%;
     margin-top: 2rem;
-    
-    background: linear-gradient(26deg, #ce236d, #141e13, #0e65d0, #3C0753, #0dbb0d, #13d28f, #030637 );
+
+    background: linear-gradient(26deg, #ce236d, #141e13, #0e65d0, #3C0753, #0dbb0d, #13d28f, #030637);
     background-size: 200% 200%;
     -webkit-animation: AnimationName 37s ease-in-out infinite;
     -moz-animation: AnimationName 37s ease infinite;
@@ -102,11 +104,12 @@ body{
 }
 
 
-.text12{ margin: 3rem;
+.text12 {
+    margin: 3rem;
     text-align: left;
     font-size: 1.7rem;
     text-size-adjust: none;
-    line-break:calc(1px);
+    line-break: calc(1px);
     color: rgb(255, 255, 255);
     overflow: hidden;
     font-weight: lighter;
@@ -116,39 +119,40 @@ body{
 
 
 
-.logo{
+.logo {
     filter: invert(100%);
-   width: 100%;
-   max-width: 30px;
-   height: 100%;
-   max-height: 40px;
+    width: 100%;
+    max-width: 30px;
+    height: 100%;
+    max-height: 40px;
 
-  
+
 }
 
 
 
 /*********about/project area************/
 
-.box3{     pointer-events: none;
+.box3 {
+    pointer-events: none;
     width: 5.5rem;
     max-width: 30%;
     height: 50%;
+    text-wrap: wrap;
 
-    
     background-color: #a5942500;
     position: absolute;
     right: 4vw;
     bottom: 3vw;
-    overflow:hidden;
-   }
+    overflow: hidden;
+}
 
-.text11{
+.text11 {
     text-align: center;
     line-height: 1.1rem;
     font-size: 0.8rem;
     text-size-adjust: none;
-    line-break:calc(1px);
+    line-break: calc(1px);
     color: bisque;
     font-weight: lighter;
     font-family: 'Zen Maru Gothic', serif;
@@ -158,72 +162,77 @@ body{
 
 
 /**********nav/bar**************/
-.box2{
-    width:calc(25% + 2rem);
+.box2 {
+    width: calc(25% + 2rem);
     height: 25%;
     margin: 1%;
     background-color: rgba(197, 24, 168, 0);
     margin-top: 4%;
 
 }
-.pages-link{
-    text-decoration: none;  
-    font-size: 1rem; 
+
+.pages-link {
+    text-decoration: none;
+    font-size: 1rem;
     margin: 0;
     color: #ffffff;
     font-weight: lighter;
     font-family: 'Zen Maru Gothic', serif;
 
 }
-.link-pages{
+
+.link-pages {
 
     list-style: none;
     margin: 0%;
     height: 1.7rem;
     transition: 1s ease transform;
 }
-.link-pages:hover{
 
-   transform:  scale(1.2);
-   text-shadow: #0960c9;
+.link-pages:hover {
+
+    transform: scale(1.2);
+    text-shadow: #0960c9;
 }
 
 
 
-.nav-nav{
+.nav-nav {
     padding-left: 2rem;
-    margin:0%
-
+    margin: 0%
 }
+
 /************projects******************/
-.box6{
+.box6 {
     width: 15 rem;
     max-width: 70%;
     height: 35rem;
     max-height: 70%;
-    
+
     background-color: #00000000;
-position: absolute;
-right: 2vw;
-bottom: 1vw;
-bottom: 3rem;
-margin-left: 4rem;
-font-size:calc(0.9rem - 60%);
-overflow-x: scroll;
-overflow-y: visible;
+    position: absolute;
+    right: 2vw;
+    bottom: 1vw;
+    bottom: 3rem;
+    margin-left: 4rem;
+    font-size: calc(0.9rem - 60%);
+    overflow-x: scroll;
+    overflow-y: visible;
 
 }
+
 .box6::-webkit-scrollbar {
-    display: none;}
+    display: none;
+}
 
 
-.text14{ 
-    margin-left:1.5rem;
+.text14 {
+    margin-left: 1.5rem;
     text-align: right;
-    font-size:calc(1.3rem - 60%);
+    font-size: calc(1.3rem - 60%);
     text-decoration: none;
     transition: 1s ease transform;
-    
+
     margin-bottom: 3rem;
     font-weight: lighter;
     font-family: 'Zen Maru Gothic', serif;
@@ -231,136 +240,203 @@ overflow-y: visible;
 
     color: #000000;
 }
-.text14:hover{
 
-    transform:scale(1.2);
+.text14:hover {
+
+    transform: scale(1.2);
 
     text-shadow: #626364;
- }
- 
- .seprate2{
+}
+
+.seprate2 {
     position: relative;
     top: 3rem;
     line-height: 0.5rem;
     text-decoration-color: #494f49;
- }
+}
 
- .img2{
+.img2 {
     width: 100%;
-   max-width: 25px;
-   height: 100%;
-   max-height: 25px;
-   transform: rotate(@-o-keyframes);
+    max-width: 25px;
+    height: 100%;
+    max-height: 25px;
+    transform: rotate(@-o-keyframes);
 
-   filter: invert(1);
-  
+    filter: invert(1);
 
 
-  
- }
 
- .rot:hover , .rot:focus{
-   transition: ease-in-out transform 10s;
-   transform: rotate(3600deg);
- }
+
+}
+
+.rot:hover,
+.rot:focus {
+    transition: ease-in-out transform 10s;
+    transform: rotate(3600deg);
+}
 
 /***********see*also********/
 
-.box5{
+.box5 {
     width: 15 rem;
     max-width: 50%;
     height: 35rem;
     max-height: 55%;
-    
-    background-color: #c5b33f00;
-position: absolute;
-left: 2vw;
-bottom: 3vw;
 
-position: absolute;
-bottom: 1rem;
-margin-left:0rem;
-font-size:calc(0.9rem - 60%);
+    background-color: #c5b33f00;
+    position: absolute;
+    left: 2vw;
+    bottom: 3vw;
+
+    position: absolute;
+    bottom: 1rem;
+    margin-left: 0rem;
+    font-size: calc(0.9rem - 60%);
 
 
 }
 
-.text13{ 
-    margin-left:1.5rem;
+.text13 {
+    margin-left: 1.5rem;
     text-align: left;
-    font-size:calc(0.9rem - 60%);
+    font-size: calc(0.9rem - 60%);
     text-decoration: none;
     transition: 1s ease transform;
     margin-top: 1rem;
-    
-}
-.text13:hover{
 
-    transform:  scale(1.2);
+}
+
+.text13:hover {
+
+    transform: scale(1.2);
     text-shadow: #0572df;
-    
- }
- 
- .seprate1{
+
+}
+
+.seprate1 {
     position: relative;
     top: 3rem;
     line-height: 1rem;
     text-decoration-color: #44c938;
- }
+}
 
-a { color: inherit; text-decoration: none;} 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.box5,
+.box3,
+.box4,
+.box6 {
+    visibility: hidden;
+
+}
+
+.show {
+    visibility: visible;
+
+
+}
+
+
 
 /******************background animation****************************/
 @-webkit-keyframes AnimationName {
-    0%{background-position:0% 76%}
-    50%{background-position:100% 25%}
-    100%{background-position:0% 76%}
+    0% {
+        background-position: 0% 76%
+    }
+
+    50% {
+        background-position: 100% 25%
+    }
+
+    100% {
+        background-position: 0% 76%
+    }
 }
+
 @-moz-keyframes AnimationName {
-    0%{background-position:0% 76%}
-    50%{background-position:100% 25%}
-    100%{background-position:0% 76%}
+    0% {
+        background-position: 0% 76%
+    }
+
+    50% {
+        background-position: 100% 25%
+    }
+
+    100% {
+        background-position: 0% 76%
+    }
 }
+
 @-o-keyframes AnimationName {
-    0%{background-position:0% 76%}
-    50%{background-position:100% 25%}
-    100%{background-position:0% 76%}
+    0% {
+        background-position: 0% 76%
+    }
+
+    50% {
+        background-position: 100% 25%
+    }
+
+    100% {
+        background-position: 0% 76%
+    }
 }
+
 @keyframes AnimationName {
-    0%{background-position:0% 76%}
-    50%{background-position:100% 25%}
-    100%{background-position:0% 76%}
+    0% {
+        background-position: 0% 76%
+    }
+
+    50% {
+        background-position: 100% 25%
+    }
+
+    100% {
+        background-position: 0% 76%
+    }
 }
 
 @keyframes anima {
-    0%{background-position:5% 25%}
-    15%{background-position:25% 50%}
-    30%{background-position:50% 75%}
-    45%{background-position:75% 100%}
-    60%{background-position:100% 75%}
-    75%{background-position:75% 50%}
-    90%{background-position:50% 0%}
-    105%{background-position:25% 5%}
+    0% {
+        background-position: 5% 25%
+    }
+
+    15% {
+        background-position: 25% 50%
+    }
+
+    30% {
+        background-position: 50% 75%
+    }
+
+    45% {
+        background-position: 75% 100%
+    }
+
+    60% {
+        background-position: 100% 75%
+    }
+
+    75% {
+        background-position: 75% 50%
+    }
+
+    90% {
+        background-position: 50% 0%
+    }
+
+    105% {
+        background-position: 25% 5%
+    }
 
 }
 
-
-
-
-
 /******************preloader*************************/
 
-
-
-
-
-
-
-
-
-
-.mmo{
+.mmo {
     width: 1rem;
     height: 1rem;
-   
+
 }
